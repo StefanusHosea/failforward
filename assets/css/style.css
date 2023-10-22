@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+html,body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:99.5vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color:#000;
+  background-color: #FD1313;
+}
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #FD1313; 
+  --gradient-color-2: #FF4848; 
+  --gradient-color-3: #DD0101;  
+  --gradient-color-4: #FF8889;
+}
+a{text-decoration: none}
+.outer {display: table;position: absolute;height: 100%;width: 100%;}
+.middle {display: table-cell;vertical-align: middle;}
+.inner {margin-left: auto;margin-right: auto; text-align:center; padding: 0 1.5em}
+img{user-drag: none; user-select: none;-moz-user-select: none;-webkit-user-drag: none;-webkit-user-select: none;-ms-user-select: none;}
+.logo{max-width: 175px;transition: all .5s}
+.logo:hover{transform: scale(.975);-webkit-filter: blur(2.5px);opacity: .65}
+h1{font-size: 1.5rem;font-weight: 800;letter-spacing: .25rem;margin:1em 0 1em;}
+h1 span{transition: all .5s}
+.f3:hover,.f4:hover,.f5:hover,.f6:hover,.f7:hover,.f8:hover{-webkit-filter: blur(0px);opacity: .65}
+.f3{font-weight: 300;-webkit-filter: blur(.5px)}
+.f4{font-weight: 400;-webkit-filter: blur(.65px)}
+.f5{font-weight: 500;-webkit-filter: blur(.85px)}
+.f6{font-weight: 600;-webkit-filter: blur(1px)}
+.f7{font-weight: 700;-webkit-filter: blur(1.15px)}
+.f8{-webkit-filter: blur(2px)}
+.player{margin-bottom: 3em;}
+.player:hover a img{opacity: .5;-webkit-filter:blur(1.25px)}
+.player a img{transition: all .5s}
+.player a img:hover{opacity: 1;transform: scale(1.025);-webkit-filter:blur(0px)}
+.player img{max-height: 50px;padding: .25em}
+.footer{max-width: 75%;margin: 1em auto;text-align: center;}
+.footer:last-child{border-top: solid 1px;padding-top: .75em;}
+.footer:last-child span{font-size: .55rem;vertical-align: 35%}
+.footer span{font-size: .75rem;font-weight: 600;text-transform: uppercase;letter-spacing: .25rem;vertical-align: 20%;padding: 0.5em;}
+.social img{max-width:15px}
+.footer img{margin: 0 .35em;transition: all .5s}
+.footer img:hover{opacity: .65}
+.pro .b{max-height: 15px}
+.pro .hcs{max-height: 25px;margin-right: .5rem}
+@media all and (max-width: 768px) {
+ .footer{max-width: 100%;}
+ .logo{max-width: 125px}
+ .player img{max-height: 42.5px}
+ .player:hover a img{-webkit-filter:blur(0)}
+ .player a img:hover{transform: scale(1)}
+}
